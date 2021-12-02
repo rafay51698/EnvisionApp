@@ -17,6 +17,7 @@ class _HomeTeacherState extends State<HomeTeacher> {
     "Johnny"
   ];
   List Fees = ['200', '100', '50', '100000', '10'];
+  List availability = ['yes', 'no', 'no', 'yes', 'no'];
 
   @override
   Widget build(BuildContext context) {
@@ -49,7 +50,7 @@ class _HomeTeacherState extends State<HomeTeacher> {
                   color: primary,
                 ),
                 margin: const EdgeInsets.all(15),
-                height: MediaQuery.of(context).size.height * 0.3,
+                height: MediaQuery.of(context).size.height * 0.4,
                 width: MediaQuery.of(context).size.width * 0.85,
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -60,14 +61,21 @@ class _HomeTeacherState extends State<HomeTeacher> {
                       child: Image.asset("assets/teacher.png"),
                     ),
                     Text(
-                      teachername[index],
+                      "Name: ${teachername[index]}",
                       style: TextStyle(
                           color: Colors.black,
                           fontWeight: FontWeight.bold,
                           fontSize: 18),
                     ),
                     Text(
-                      Fees[index],
+                      "Fees: ${Fees[index]}",
+                      style: TextStyle(
+                          color: Colors.black,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 18),
+                    ),
+                    Text(
+                      "Availabilty: ${availability[index]}",
                       style: TextStyle(
                           color: Colors.black,
                           fontWeight: FontWeight.bold,

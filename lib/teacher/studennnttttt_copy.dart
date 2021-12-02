@@ -18,6 +18,14 @@ class _StudeennnttttState extends State<Studeennntttt> {
   ];
   List Fees = ['engineering', 'commerce', 'engineering', 'science', 'medical'];
 
+  List phone = [
+    '03423542545 ',
+    '0534534543',
+    '05232523523',
+    '023523532523',
+    '0252236236'
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -60,14 +68,21 @@ class _StudeennnttttState extends State<Studeennntttt> {
                       child: Image.asset("assets/student1.png"),
                     ),
                     Text(
-                      teachername[index],
+                      "Name: ${teachername[index]}",
                       style: TextStyle(
                           color: Colors.black,
                           fontWeight: FontWeight.bold,
                           fontSize: 18),
                     ),
                     Text(
-                      Fees[index],
+                      "Department: ${Fees[index]}",
+                      style: TextStyle(
+                          color: Colors.black,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 18),
+                    ),
+                    Text(
+                      "Phone: ${phone[index]}",
                       style: TextStyle(
                           color: Colors.black,
                           fontWeight: FontWeight.bold,
