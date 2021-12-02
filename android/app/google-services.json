@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "486175311381",
+    "project_id": "envisionapp-cdb21",
+    "storage_bucket": "envisionapp-cdb21.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:486175311381:android:34f6008c756cec72ef301c",
+        "android_client_info": {
+          "package_name": "com.example.flutterapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "486175311381-kecp1hvj18kmkhqbnd1598sgjnnusje7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChZt0htZXdRXZg0RkK0a7te2foFAfkBt4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "486175311381-kecp1hvj18kmkhqbnd1598sgjnnusje7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
