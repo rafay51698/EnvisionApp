@@ -41,6 +41,7 @@ class _SignUpStudentState extends State<SignUpStudent> {
                 height: 50,
                 width: MediaQuery.of(context).size.width * 0.7,
                 child: (TextField(
+                  controller: nameController,
                   // onChanged: (name) {
                   //   username = name;
                   // },
@@ -63,6 +64,7 @@ class _SignUpStudentState extends State<SignUpStudent> {
                 height: 50,
                 width: MediaQuery.of(context).size.width * 0.7,
                 child: (TextField(
+                  controller: emailController,
                   // onChanged: (email) {
                   //   useremail = email;
                   // },
@@ -85,6 +87,7 @@ class _SignUpStudentState extends State<SignUpStudent> {
                 height: 50,
                 width: MediaQuery.of(context).size.width * 0.7,
                 child: (TextField(
+                  controller: passwordController,
                   onChanged: (password) {
                     userpass = password;
                   },
@@ -157,7 +160,7 @@ class _SignUpStudentState extends State<SignUpStudent> {
   TextEditingController nameController = TextEditingController();
   TextEditingController classController = TextEditingController();
   TextEditingController phoneController = TextEditingController();
-  TextEditingController AreaController = TextEditingController();
+  TextEditingController areaController = TextEditingController();
   TextEditingController subjectController = TextEditingController();
   sendData() {
     firebaseFirestore.collection('Student Data').add({
@@ -165,7 +168,7 @@ class _SignUpStudentState extends State<SignUpStudent> {
       'email': emailController.text,
       'class': classController.text,
       'phone': phoneController.text,
-      'area': AreaController.text,
+      'area': areaController.text,
     });
   }
 

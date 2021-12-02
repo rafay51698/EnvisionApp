@@ -1,14 +1,23 @@
 import 'package:flutter/material.dart';
 import 'package:flutterapp/theme/app_color.dart';
 
-class HomeStudent extends StatefulWidget {
-  const HomeStudent({Key? key}) : super(key: key);
+class HomeTeacher extends StatefulWidget {
+  const HomeTeacher({Key? key}) : super(key: key);
 
   @override
-  _HomeStudentState createState() => _HomeStudentState();
+  _HomeTeacherState createState() => _HomeTeacherState();
 }
 
-class _HomeStudentState extends State<HomeStudent> {
+class _HomeTeacherState extends State<HomeTeacher> {
+  List teachername = [
+    "Ali Mughal",
+    "Izhaan Mirza",
+    "Umair Khan",
+    "Bilal Rehman",
+    "Johnny"
+  ];
+  List Fees = ['200', '100', '50', '100000', '10'];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -23,7 +32,7 @@ class _HomeStudentState extends State<HomeStudent> {
         centerTitle: true,
       ),
       body: ListView.builder(
-          itemCount: 10,
+          itemCount: teachername.length,
           itemBuilder: (context, index) {
             return GestureDetector(
               onTap: () {
@@ -50,8 +59,8 @@ class _HomeStudentState extends State<HomeStudent> {
                       width: 135,
                       child: Image.asset("assets/student1.png"),
                     ),
-                    const Text(
-                      "STUDENT",
+                    Text(
+                      teachername[index],
                       style: TextStyle(
                           color: Colors.black,
                           fontWeight: FontWeight.bold,

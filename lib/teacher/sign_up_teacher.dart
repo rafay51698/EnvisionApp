@@ -114,12 +114,12 @@ class _SignUpTeacherState extends State<SignUpTeacher> {
                 decoration: deco(),
                 child: TextButton(
                   onPressed: () {
-                    signup();
-                    sendData();
+                    // signup();
+                    // sendData();
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const HomeStudent(),
+                        builder: (context) => ViewData(),
                       ),
                     );
                   },
