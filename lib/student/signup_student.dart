@@ -112,12 +112,14 @@ class _SignUpStudentState extends State<SignUpStudent> {
                 decoration: deco(),
                 child: TextButton(
                   onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => const HomeTeacher(),
-                      ),
-                    );
+                    if (passwordController.text != null) {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const HomeTeacher(),
+                        ),
+                      );
+                    } else {}
                   },
                   child: Row(
                     children: [
