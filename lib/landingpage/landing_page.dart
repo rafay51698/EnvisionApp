@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutterapp/admin/login_admin.dart';
 import 'package:flutterapp/student/login_student.dart';
 import 'package:flutterapp/teacher/login_teacher.dart';
+import 'package:flutterapp/theme/app_color.dart';
 
 class LandingPage extends StatefulWidget {
   const LandingPage({Key? key}) : super(key: key);
@@ -13,6 +15,8 @@ class _LandingPageState extends State<LandingPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      // backgroundColor: Colors.purple[700],
+      backgroundColor: primary,
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -27,19 +31,28 @@ class _LandingPageState extends State<LandingPage> {
                 );
               },
               child: Container(
-                margin: const EdgeInsets.all(10),
+                margin: const EdgeInsets.all(15),
                 height: MediaQuery.of(context).size.height * 0.25,
                 width: MediaQuery.of(context).size.width * 0.75,
-                color: Colors.red,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(20),
+                  color: Colors.white,
+                ),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     SizedBox(
-                      height: 80,
-                      width: 120,
+                      height: 90,
+                      width: 135,
                       child: Image.asset("assets/teacher.png"),
                     ),
-                    const Text("TEACHER")
+                    const Text(
+                      "TEACHER",
+                      style: TextStyle(
+                          color: Colors.black,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 18),
+                    )
                   ],
                 ),
               ),
@@ -54,28 +67,67 @@ class _LandingPageState extends State<LandingPage> {
                 );
               },
               child: Container(
-                color: Colors.red,
-                margin: const EdgeInsets.all(10),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(20),
+                  color: Colors.white,
+                ),
+                margin: const EdgeInsets.all(15),
                 height: MediaQuery.of(context).size.height * 0.25,
                 width: MediaQuery.of(context).size.width * 0.75,
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     SizedBox(
-                      height: 80,
-                      width: 120,
+                      height: 90,
+                      width: 135,
                       child: Image.asset("assets/student1.png"),
                     ),
-                    const Text("STUDENT")
+                    const Text(
+                      "STUDENT",
+                      style: TextStyle(
+                          color: Colors.black,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 18),
+                    )
                   ],
                 ),
               ),
             ),
-            Container(
-              margin: const EdgeInsets.all(10),
-              height: MediaQuery.of(context).size.height * 0.25,
-              width: MediaQuery.of(context).size.width * 0.75,
-              color: Colors.red,
+            GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const LoginAdmin(),
+                  ),
+                );
+              },
+              child: Container(
+                margin: const EdgeInsets.all(15),
+                height: MediaQuery.of(context).size.height * 0.25,
+                width: MediaQuery.of(context).size.width * 0.75,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(20),
+                  color: Colors.white,
+                ),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    SizedBox(
+                      height: 90,
+                      width: 135,
+                      child: Image.asset("assets/admin.png"),
+                    ),
+                    const Text(
+                      "ADMIN",
+                      style: TextStyle(
+                          color: Colors.black,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 18),
+                    )
+                  ],
+                ),
+              ),
             )
           ],
         ),

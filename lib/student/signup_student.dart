@@ -20,8 +20,8 @@ class _SignUpStudentState extends State<SignUpStudent> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: white,
-        foregroundColor: primary,
+        backgroundColor: primary,
+        foregroundColor: white,
         title: const Text(
           'Student Registration',
           style: TextStyle(fontSize: 25),

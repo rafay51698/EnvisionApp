@@ -2,16 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:flutterapp/student/home_student.dart';
 
 import 'package:flutterapp/theme/app_color.dart';
-import 'login_teacher.dart';
+import 'login_admin.dart';
 
-class SignUpTeacher extends StatefulWidget {
-  const SignUpTeacher({Key? key}) : super(key: key);
+class SignUpAdmin extends StatefulWidget {
+  const SignUpAdmin({Key? key}) : super(key: key);
 
   @override
-  _SignUpTeacherState createState() => _SignUpTeacherState();
+  _SignUpAdminState createState() => _SignUpAdminState();
 }
 
-class _SignUpTeacherState extends State<SignUpTeacher> {
+class _SignUpAdminState extends State<SignUpAdmin> {
   var orgpass = "123456";
   // ignore: prefer_typing_uninitialized_variables
   var userpass;
@@ -23,7 +23,7 @@ class _SignUpTeacherState extends State<SignUpTeacher> {
         backgroundColor: primary,
         foregroundColor: white,
         title: const Text(
-          'Teacher Registration',
+          'Admin Registration',
           style: TextStyle(fontSize: 25),
         ),
         centerTitle: true,
@@ -33,7 +33,7 @@ class _SignUpTeacherState extends State<SignUpTeacher> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
-              animationTeacher(),
+              animationAdmin(),
               Container(
                 margin: const EdgeInsets.only(bottom: 10),
                 height: 50,
@@ -132,7 +132,7 @@ class _SignUpTeacherState extends State<SignUpTeacher> {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => const LoginTeacher(),
+                      builder: (context) => const LoginAdmin(),
                     ),
                   );
                 },

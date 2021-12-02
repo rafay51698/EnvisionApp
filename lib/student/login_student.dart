@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutterapp/student/signup_student.dart';
-import 'package:flutterapp/teacher/sign_up_teacher.dart';
 import 'package:flutterapp/theme/app_color.dart';
 
 class LoginStudent extends StatefulWidget {
@@ -22,8 +21,8 @@ class _LoginStudentState extends State<LoginStudent> {
     return Scaffold(
       backgroundColor: white,
       appBar: AppBar(
-        backgroundColor: white,
-        foregroundColor: primary,
+        backgroundColor: primary,
+        foregroundColor: white,
         title: const Text(
           'Student Login',
           style: TextStyle(fontSize: 25),

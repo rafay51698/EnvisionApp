@@ -1,15 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:flutterapp/admin/signup_admin.dart';
+import 'package:flutterapp/student/signup_student.dart';
 import 'package:flutterapp/teacher/sign_up_teacher.dart';
 import 'package:flutterapp/theme/app_color.dart';
 
-class LoginTeacher extends StatefulWidget {
-  const LoginTeacher({Key? key}) : super(key: key);
+class LoginAdmin extends StatefulWidget {
+  const LoginAdmin({Key? key}) : super(key: key);
 
   @override
-  _LoginTeacherState createState() => _LoginTeacherState();
+  _LoginAdminState createState() => _LoginAdminState();
 }
 
-class _LoginTeacherState extends State<LoginTeacher> {
+class _LoginAdminState extends State<LoginAdmin> {
   // ignore: prefer_typing_uninitialized_variables
   var userpass;
   // ignore: prefer_typing_uninitialized_variables
@@ -24,7 +26,7 @@ class _LoginTeacherState extends State<LoginTeacher> {
         backgroundColor: primary,
         foregroundColor: white,
         title: const Text(
-          'Teacher Login',
+          'Admin Login',
           style: TextStyle(fontSize: 25),
         ),
         centerTitle: true,
@@ -34,7 +36,7 @@ class _LoginTeacherState extends State<LoginTeacher> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              animationTeacher(),
+              animationAdmin(),
               const SizedBox(
                 height: 20,
               ),
@@ -105,7 +107,7 @@ class _LoginTeacherState extends State<LoginTeacher> {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (context) => const SignUpTeacher()),
+                        builder: (context) => const SignUpAdmin()),
                   );
                 },
                 child: Text(
@@ -144,11 +146,11 @@ class _LoginTeacherState extends State<LoginTeacher> {
   }
 }
 
-Widget animationTeacher() {
+Widget animationAdmin() {
   return Container(
     margin: const EdgeInsets.only(top: 20, bottom: 20),
     child: Image.asset(
-      'assets/teacher.png',
+      'assets/admin.png',
       height: 200,
       width: 300,
     ),
