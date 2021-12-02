@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutterapp/student/signup_student.dart';
+import 'package:flutterapp/teacher/home_teacher.dart';
 import 'package:flutterapp/theme/app_color.dart';
 
 class LoginStudent extends StatefulWidget {
@@ -66,26 +67,12 @@ class _LoginStudentState extends State<LoginStudent> {
                 width: 110,
                 decoration: deco(),
                 child: TextButton(
-                  onPressed: () {},
-                  // onPressed: () {
-                  //   setState(() {
-                  //     if (userpass == orgpass) {
-                  //       Navigator.push(
-                  //           context,
-                  //           MaterialPageRoute(
-                  //               builder: (context) => const LandingPage()));
-                  //     } else {
-                  //       showDialog(
-                  //           context: context,
-                  //           builder: (context) {
-                  //             return const AlertDialog(
-                  //               title: Text("Incorrect Password"),
-                  //               content: Text("Please Try Again"),
-                  //             );
-                  //           });
-                  //     }
-                  //   });
-                  // },
+                  onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const HomeTeacher()));
+                  },
                   child: Row(
                     children: [
                       Icon(

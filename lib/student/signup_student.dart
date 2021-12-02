@@ -2,6 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutterapp/student/home_student.dart';
+import 'package:flutterapp/teacher/home_teacher.dart';
 
 import 'package:flutterapp/theme/app_color.dart';
 import 'login_student.dart';
@@ -114,7 +115,7 @@ class _SignUpStudentState extends State<SignUpStudent> {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const HomeStudent(),
+                        builder: (context) => const HomeTeacher(),
                       ),
                     );
                   },

@@ -125,7 +125,7 @@ class _ViewDataState extends State<ViewData> {
                               SizedBox(
                                 height: 90,
                                 width: 135,
-                                child: Image.asset("assets/student1.png"),
+                                child: Image.asset("assets/teacher.png"),
                               ),
                               Text(
                                 "data['name'].toString(),",
@@ -134,7 +134,7 @@ class _ViewDataState extends State<ViewData> {
                                     color: Colors.black,
                                     fontWeight: FontWeight.bold,
                                     fontSize: 18),
-                              )
+                              ),
                             ],
                           ),
                         ),

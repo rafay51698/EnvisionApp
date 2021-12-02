@@ -1,22 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:flutterapp/theme/app_color.dart';
 
-class HomeTeacher extends StatefulWidget {
-  const HomeTeacher({Key? key}) : super(key: key);
+class Studeennntttt extends StatefulWidget {
+  const Studeennntttt({Key? key}) : super(key: key);
 
   @override
-  _HomeTeacherState createState() => _HomeTeacherState();
+  _StudeennnttttState createState() => _StudeennnttttState();
 }
 
-class _HomeTeacherState extends State<HomeTeacher> {
+class _StudeennnttttState extends State<Studeennntttt> {
   List teachername = [
-    "Ali Mughal",
-    "Izhaan Mirza",
+    "Anas Mughal",
+    "AHmed Mirza",
     "Umair Khan",
-    "Bilal Rehman",
-    "Johnny"
+    "Fahad Rehman",
+    "NOice"
   ];
-  List Fees = ['200', '100', '50', '100000', '10'];
+  List Fees = ['engineering', 'commerce', 'engineering', 'science', 'medical'];
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +26,7 @@ class _HomeTeacherState extends State<HomeTeacher> {
         backgroundColor: primary,
         foregroundColor: white,
         title: const Text(
-          'Teacher Data',
+          'Student Data',
           style: TextStyle(fontSize: 25),
         ),
         centerTitle: true,
@@ -57,7 +57,7 @@ class _HomeTeacherState extends State<HomeTeacher> {
                     SizedBox(
                       height: 90,
                       width: 135,
-                      child: Image.asset("assets/teacher.png"),
+                      child: Image.asset("assets/student1.png"),
                     ),
                     Text(
                       teachername[index],

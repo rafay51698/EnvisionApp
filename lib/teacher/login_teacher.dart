@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutterapp/teacher/home_teacher.dart';
 import 'package:flutterapp/teacher/sign_up_teacher.dart';
+import 'package:flutterapp/teacher/studennnttttt_copy.dart';
 import 'package:flutterapp/theme/app_color.dart';
 
 class LoginTeacher extends StatefulWidget {
@@ -71,7 +72,7 @@ class _LoginTeacherState extends State<LoginTeacher> {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => const HomeTeacher()));
+                            builder: (context) => const Studeennntttt()));
                   },
                   child: Row(
                     children: [
